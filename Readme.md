@@ -28,7 +28,6 @@ services:
       - ACCEPT_EULA=Y
       - MSSQL_SA_PASSWORD=SuaSenhaSuperSegura
       - MSSQL_PID=Evaluation
-      - SQL_DB_NAME=NomeDoSeuBancoDeDados
     ports:
       - "1433:1433"
     volumes:
