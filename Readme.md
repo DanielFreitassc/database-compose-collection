@@ -36,7 +36,8 @@ services:
 volumes:
   sql_server_data:
 ```
-```
+# Mysql Image
+```yml
 services:
   mysql:
     image: mysql:5.7
