@@ -36,3 +36,22 @@ services:
 volumes:
   sql_server_data:
 ```
+```
+services:
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: mysql
+      MYSQL_USER: SeuUsuario
+      MYSQL_PASSWORD: SuaSenhaSuperSegura
+      MYSQL_ROOT_PASSWORD: admin
+    ports:
+      - '3306:3306'
+    expose:
+      - '3306'
+    volumes:
+      - mysql-db:/var/lib/mysql
+volumes:
+  mysql-db:
+```
