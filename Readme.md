@@ -56,3 +56,14 @@ services:
 volumes:
   mysql-db:
 ```
+# Mongo db
+```yml
+services:
+  mongodb:
+    image: mongo
+    ports:
+      - 27017:27017
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME=SeuUsuario
+      - MONGO_INITDB_ROOT_PASSWORD=SuaSenhaSuperSegura
+```
